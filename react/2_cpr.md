@@ -8,16 +8,16 @@ react 프로젝트를 생성하고, 필요한 모듈들을 설치하여 개발�
 |   |   |
 |---|:---:|
 |app-name|  |
-|&nbsp;&nbsp;&nbsp;├ README.md|(1)|
-|&nbsp;&nbsp;&nbsp;├ node_modules|(2)|
-|&nbsp;&nbsp;&nbsp;├ package.json|(3)|
-|&nbsp;&nbsp;&nbsp;├ package-lock.json|(4)|
-|&nbsp;&nbsp;&nbsp;├ .gitignore|(5)|
-|&nbsp;&nbsp;&nbsp;├ public|(6)|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├ favocon.ico|(7)|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├ index.html|(8)|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└ manifest.json|(9)|
-|&nbsp;&nbsp;&nbsp;├ src|(10)|
+|&nbsp;&nbsp;&nbsp;├ README.md| |
+|&nbsp;&nbsp;&nbsp;├ node_modules|  |
+|&nbsp;&nbsp;&nbsp;├ package.json|(1)|
+|&nbsp;&nbsp;&nbsp;├ package-lock.json| |
+|&nbsp;&nbsp;&nbsp;├ .gitignore|    |
+|&nbsp;&nbsp;&nbsp;├ public|(2)|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├ favocon.ico| |
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├ index.html|(3)|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└ manifest.json|   |
+|&nbsp;&nbsp;&nbsp;├ src|(4)|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├ App.css
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├ App.js
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├ index.css
@@ -25,7 +25,12 @@ react 프로젝트를 생성하고, 필요한 모듈들을 설치하여 개발�
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├ logo.svg
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└ serviceWorker.js
 
-1. src   
-    app의 모든 소스
-2. index.html
+1. package.json   
+    app에 사용되는 모듈 및 app 관련 정보
+2. public   
+    app에 사용되는 정적 파일들(image, css, js, ...)
+3. index.html   
     SPA(Single Page Application)의 특성에 따라 각 코드들을 이 html에 그린다.
+4. src   
+    app의 모든 소스
+
