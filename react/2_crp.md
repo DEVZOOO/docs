@@ -25,12 +25,12 @@ react 프로젝트를 생성하고, 필요한 모듈들을 설치하여 개발�
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├ logo.svg
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└ serviceWorker.js
 
-1. package.json   
-    app에 사용되는 모듈 및 app 관련 정보
-2. public   
-    app에 사용되는 정적 파일들(image, css, js, ...)
-3. index.html   
-    SPA(Single Page Application)의 특성에 따라 각 코드들을 이 html에 그린다.
-4. src   
-    app의 모든 소스
+### 1. package.json   
+app에 사용되는 모듈 및 app 관련 정보
+### 2. public   
+app에 사용되는 정적 파일들(image, css, js, ...)
+### 3. index.html   
+SPA(Single Page Application)의 특성에 따라 각 코드들을 이 html에 그린다.
+### 4. src   
+app의 모든 소스
 
