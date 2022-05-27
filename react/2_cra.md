@@ -2,7 +2,6 @@
 
 react 프로젝트를 생성하고, 필요한 모듈들을 설치하여 개발할 수 있는 환경을 만들어준다.   
 `npx create-react-app [app-name]`
-> [!NOTE]   
 > 나는 typescript를 사용하므로 관련 옵션을 추가하여 실행했다.   
 > `npx create-react-app [app-name] --template typescript`
 
