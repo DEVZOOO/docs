@@ -143,7 +143,8 @@ items = [
     ```
 
 ### 활용
-리스트 메소드
+리스트 메소드   
+[클래스와 객체 더 알아보기 - 점프투파이썬](https://wikidocs.net/28#_2)
 >- 객체 Object
 >    - 물건, 사물, 대상
 >    - 고유한 특징을 가지는 데이터를 저장한 속성 Attribute + 속성으로 조작하는 행위인 메소드 Method
@@ -196,7 +197,7 @@ items = [
     ```
 
 - 정렬   
-    [sort() 더 알아보기(공식 doc)](https://docs.python.org/ko/3/library/stdtypes.html?highlight=sort#list.sort)
+    [sort() 더 알아보기 - Python 문서](https://docs.python.org/ko/3/library/stdtypes.html?highlight=sort#list.sort)
     |함수|설명|
     |:---:|:---:|
     |`sort()`|리스트 항목들 오름차순/내림차순으로 정렬, 원본 변경(오름차순시 알파벳은 대문자 먼저)|
@@ -301,14 +302,14 @@ start, step 생략 가능
     ```
 - 예시
     ```python
-    # ex1. 숫자
+    # 1. 숫자
     for i in range(3) :
         print('%d번째 루프' %i)
     # 0번째 루프
     # 1번째 루프
     # 2번째 루프
 
-    # ex2. 문자열
+    # 2. 문자열
     for ch in 'abcd' :
         print(ch)
     # a
@@ -316,7 +317,7 @@ start, step 생략 가능
     # c
     # d
 
-    # ex3. 리스트
+    # 3. 리스트
     for item in ['월', '화', '수', '목'] :
         print(item)
     # 월
