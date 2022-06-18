@@ -196,7 +196,7 @@ items = [
     ```
 
 - 정렬   
-    [sort() 자세히 - 공식 doc](https://docs.python.org/ko/3/library/stdtypes.html?highlight=sort#list.sort)
+    [sort() 더 알아보기(공식 doc)](https://docs.python.org/ko/3/library/stdtypes.html?highlight=sort#list.sort)
     |함수|설명|
     |:---:|:---:|
     |`sort()`|리스트 항목들 오름차순/내림차순으로 정렬, 원본 변경(오름차순시 알파벳은 대문자 먼저)|
