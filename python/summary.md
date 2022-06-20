@@ -54,7 +54,7 @@ Python summary
 ## 문자열
 
 
-## 리스트
+## 리스트 list
 리스트 소개 및 활용
 
 ### 소개
@@ -272,9 +272,9 @@ num1 = [i for i in range(5) if i % 2 == 0]      # [0, 2, 4]
 - 리스트 내 리스트, 튜플 등을 넣어 구성할 수 있다.
 
 ||열0|열1|열2|
-|---|---|---|---|
-|<strong>행0</strong>|1|2|3|
-|<strong>행1</strong>|4|5|6|
+|:---:|:---:|:---:|:---:|
+|**행0**|1|2|3|
+|**행1**|4|5|6|
 ```python
 numnum = [
     [1, 2, 3],
@@ -300,8 +300,82 @@ conc = [base for i in range(3)]
 ```
 
 
-## 튜플
-튜플, 딕셔너리
+## 튜플, 딕셔너리
+여러 개의 데이터를 하나의 이름으로 관리한다.
+
+### 튜플 tuple
+- 최초 생성 이후 insert, update, delete가 불가능하다. *상수, 읽기 전용*
+- 여러 타입의 데이터들을 혼합하여 사용할 수 있다.
+- 리스트와 비슷하지면 `추가, 수정, 삭제가 불가능`하다.
+```python
+name = ('josh',)    # 항목이 한개이면 마지막 콤마 필수
+info = ('josh', 28)
+fruits = ('melon', 'strawberry', 'pineapple')
+```
+
+- 요소 방문
+    ```python
+    fruits = ('melon', 'strawberry', 'pineapple', 'grape', 'lemon')
+    fruits[1]       # 'strawberry'
+    fruits[1:3]     # ('strawberry', 'pineapple')
+    fruits[::2]     # ('melon', 'pineapple', 'lemon')
+    ```
+
+- 항목 검색
+    |함수|설명|
+    |:---:|:---:|
+    |`index(value[, start, end])`|특정 범위에서 값 찾으면 인덱스 리턴, 없으면 에러|
+    |`count(value)`|특정 값이 튜플에 존재하는 개수|
+    ```python
+    fruits = ('melon', 'strawberry', 'pineapple', 'grape', 'lemon', 'melon')
+    print( fruits.index('melon') )          # 0
+    print( fruits.count('lemon') )          # 1
+    print( fruits.index('melon', 2) )       # 5
+    ```
+
+
+### 딕셔너리 dict
+- key-value 쌍으로 이루어진 구조
+- key는 unique하며, 변경 불가능하다.
+- 순서 없는 구조이므로 index가 없다.
+
+*JSON과 비슷한 구조인 듯!*
+
+```python
+info = {
+    # key : value 구조
+    'name' : 'josh',
+    'age' : 28,
+    'nation' : 'USA',
+}
+```
+
+- 생성
+    ```python
+    # key는 리스트 제외한 숫자형, 문자열, 튜플 등 가능
+    std = {
+        'name' : 'josh',
+        2 : 28,
+        3 : '파이썬',
+    }
+    ```
+
+- 항목 검색 및 변경
+    ```python
+    std = {
+        'name' : 'josh',
+        'age' : 28,
+        'nation' : 'USA',
+        2 : 'python',
+    }
+
+    std['name']     # josh
+    std[2]          # 'python'
+
+    std['nation'] = 'KOREA'     # nation의 value를 'KOREA'로 변경
+    ```
+
+
 
 
 ## 출력
