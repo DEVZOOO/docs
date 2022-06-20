@@ -186,7 +186,7 @@ items = [
 - 항목 검색
     |함수|설명|
     |:---:|:---:|
-    |`index(value, [,start, end])`|특정 범위에서 값 찾으면 인덱스 리턴, 없으면 에러|
+    |`index(value[, start, end])`|특정 범위에서 값 찾으면 인덱스 리턴, 없으면 에러|
     |`count(value)`|특정 값이 리스트에 존재하는 개수|
     ```python
     fruits = ['melon', 'strawberry', 'melon']
@@ -239,7 +239,7 @@ items = [
 
 ### 표현식
 리스트 객체를 생성하는 여러가지 방법들
->[] 내 표현식들은 list() 내 삽입하는 >방식으로 변경 가능
+>[] 내 표현식들은 list() 내 삽입하는 방식으로 변경 가능
 >```python
 >[0 for i in range(3)]
 ># to
@@ -256,9 +256,9 @@ num3 = list((1, 2, 3))
 num1 = [0 for item in range(3)]     # [0, 0, 0]
 num2 = [0] * 3
 # 'none'으로 초기화된 3개 원소
-str1 = ['none'] * 3     # ['none', 'none', 'none']
+str1 = ['none'] * 3                 # ['none', 'none', 'none']
 # 2) 다른 값으로 초기화
-num1 = [i for i in range(5)]    # [1, 2, 3, 4, 5]
+num1 = [i for i in range(5)]        # [1, 2, 3, 4, 5]
 # 3) 연산 적용
 num1 = [i * 10 for i in range(3)]   # [0, 10, 20]
 
@@ -271,16 +271,16 @@ num1 = [i for i in range(5) if i % 2 == 0]      # [0, 2, 4]
 - 행/열이 있는 테이블 구조이다.
 - 리스트 내 리스트, 튜플 등을 넣어 구성할 수 있다.
 
-||||
-|---|---|---|
-|1|2|3|
-|4|5|6|
+||열0|열1|열2|
+|---|---|---|---|
+|<strong>행0</strong>|1|2|3|
+|<strong>행1</strong>|4|5|6|
 ```python
 numnum = [
     [1, 2, 3],
     [4, 5, 6]
 ]
-numnum[1][2]    # 6
+numnum[1][2]    # 6 (행1 열2)
 
 # 1. 기본 생성
 num1 = [
