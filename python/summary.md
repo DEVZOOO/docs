@@ -300,10 +300,8 @@ conc = [base for i in range(3)]
 ```
 
 
-## 튜플, 딕셔너리
+## 튜플 tuple
 여러 개의 데이터를 하나의 이름으로 관리한다.
-
-### 튜플 tuple
 - 최초 생성 이후 insert, update, delete가 불가능하다. *상수, 읽기 전용*
 - 여러 타입의 데이터들을 혼합하여 사용할 수 있다.
 - 리스트와 비슷하지면 `추가, 수정, 삭제가 불가능`하다.
@@ -334,7 +332,8 @@ fruits = ('melon', 'strawberry', 'pineapple')
     ```
 
 
-### 딕셔너리 dict
+## 딕셔너리 dict
+여러 개의 데이터를 하나의 이름으로 관리한다.
 - key-value 쌍으로 이루어진 구조
 - key는 unique하며, 변경 불가능하다.
 - 순서 없는 구조이므로 index가 없다.
