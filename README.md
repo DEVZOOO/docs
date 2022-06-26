@@ -1,7 +1,5 @@
-# Documents related studying
-This is a repository of documents related things I learned while studying.
+# 공부 기록
+혼자 공부하며 알게 된 것들을 기록하고 기억하는 공간입니다.
 
-[Portfolio](http://www.devzooo.com)
-
-### Front-end Developer   
+### Developer   
 devzoou@gmail.com
